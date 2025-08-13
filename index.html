@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>City Insights Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <h1>🌆 City Insights Dashboard</h1>
+    <input type="text" id="city-input" placeholder="Enter city name">
+    <button id="search-btn">Search</button>
+
+    <div id="results">
+      <section id="weather">
+        <h2>Weather</h2>
+        <p id="weather-info">No data yet</p>
+      </section>
+
+      <section id="population">
+        <h2>Population</h2>
+        <p id="population-info">No data yet</p>
+      </section>
+
+      <section id="news">
+        <h2>Latest News</h2>
+        <ul id="news-list"></ul>
+      </section>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
