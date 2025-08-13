@@ -4,29 +4,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>City Insights Dashboard</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="app">
     <h1>🌆 City Insights Dashboard</h1>
-    <input type="text" id="city-input" placeholder="Enter city name">
-    <button id="search-btn">Search</button>
+    <div class="search-bar">
+      <input type="text" id="city-input" placeholder="Enter city name...">
+      <button id="search-btn">Search</button>
+    </div>
 
-    <div id="results">
-      <section id="weather">
+    <div class="info-container">
+      <div class="weather-section">
         <h2>Weather</h2>
-        <p id="weather-info">No data yet</p>
-      </section>
+        <p id="weather"></p>
+        <img id="weather-icon" alt="" />
+      </div>
 
-      <section id="population">
-        <h2>Population</h2>
-        <p id="population-info">No data yet</p>
-      </section>
+      <div class="time-section">
+        <h2>Local Time</h2>
+        <p id="time"></p>
+      </div>
 
-      <section id="news">
-        <h2>Latest News</h2>
-        <ul id="news-list"></ul>
-      </section>
+      <div class="population-section">
+        <h2>City Info</h2>
+        <p id="population"></p>
+        <p id="country"></p>
+      </div>
+
+      <div class="map-section">
+        <h2>Map</h2>
+        <iframe id="map" loading="lazy"></iframe>
+      </div>
     </div>
   </div>
 
