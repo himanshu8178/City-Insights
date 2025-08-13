@@ -4,41 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>City Insights Dashboard</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="app">
+  <div class="container">
     <h1>🌆 City Insights Dashboard</h1>
-    <div class="search-bar">
-      <input type="text" id="city-input" placeholder="Enter city name...">
+    <div class="search-box">
+      <input type="text" id="city-input" placeholder="Enter city name">
       <button id="search-btn">Search</button>
     </div>
-
-    <div class="info-container">
-      <div class="weather-section">
-        <h2>Weather</h2>
-        <p id="weather"></p>
-        <img id="weather-icon" alt="" />
-      </div>
-
-      <div class="time-section">
-        <h2>Local Time</h2>
-        <p id="time"></p>
-      </div>
-
-      <div class="population-section">
-        <h2>City Info</h2>
-        <p id="population"></p>
-        <p id="country"></p>
-      </div>
-
-      <div class="map-section">
-        <h2>Map</h2>
-        <iframe id="map" loading="lazy"></iframe>
-      </div>
+    <div id="results">
+      <div id="city-info"></div>
+      <div id="weather-info"></div>
+      <div id="time-info"></div>
+      <div id="fact-info"></div>
     </div>
   </div>
-
   <script src="script.js"></script>
 </body>
 </html>
